@@ -1,5 +1,7 @@
 class AbstractBike
 
+	attr_reader :luggage
+
   def initialize
     puts "Bike created"
   end

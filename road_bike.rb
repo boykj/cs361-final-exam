@@ -2,10 +2,10 @@ require_relative 'pannier'
 require_relative 'abstract_bike'
 
 class RoadBike < AbstractBike
-  attr_reader :panniers
+  attr_reader :luggage
 
   def initialize
-    @panniers = [Pannier.new, Pannier.new]
+    @luggage = [Pannier.new, Pannier.new]
     @daily_rate = 15
   end
 

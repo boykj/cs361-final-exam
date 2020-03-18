@@ -3,10 +3,10 @@ require_relative 'abstract_bike'
 
 class BmxBike < AbstractBike
 
-  attr_reader :tail_pack
+  attr_reader :luggage
 
-  def initialize
-    @tail_pack = TailPack.new
+  def initialize (luggage)
+    @luggage = luggage
     @weekly_rate = 70
     @daily_rate = 20
     @hourly_rate = 5
