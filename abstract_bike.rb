@@ -1,6 +1,6 @@
 class AbstractBike
 
-	attr_reader :luggage
+	attr_reader :luggage, :weekly_rate, :daily_rate, :hourly_rate
 
   def initialize
     puts "Bike created"
@@ -12,18 +12,6 @@ class AbstractBike
 
   def prepare
     adjust
-  end
-
-	def weekly_rate
-    @weekly_rate
-  end
-    
-  def daily_rate
-    @daily_rate
-  end
-
-  def hourly_rate
-    @hourly_rate
   end
 
 end
