@@ -1,6 +1,7 @@
 require_relative 'tail_pack'
+require_relative 'abstract_bike'
 
-class BmxBike
+class BmxBike < AbstractBike
 
   def initialize
     @tail_pack = TailPack.new
@@ -13,7 +14,7 @@ class BmxBike
     puts "Cleaning..."
   end
 
-  def adjust_seat
+  def adjust
     puts "Adjusting seat..."
   end
 
