@@ -3,8 +3,6 @@ require_relative 'abstract_bike'
 
 class MountainBike < AbstractBike
 
-  attr_reader :luggage
-
   def initialize (luggage)
     @luggage = luggage
     @weekly_rate = 90
@@ -15,5 +13,5 @@ class MountainBike < AbstractBike
   def adjust
     puts "Adjusting suspension..."
   end
-  
+
 end

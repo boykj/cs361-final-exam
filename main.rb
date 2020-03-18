@@ -8,13 +8,15 @@ require_relative 'road_bike'
 require_relative 'mountain_bike'
 require_relative 'roll_pack'
 require_relative 'tail_pack'
+require_relative 'pannier'
 
 roll_pack = RollPack.new
 tail_pack = TailPack.new
+pannier = Pannier.new
 
 bikes = [
   BmxBike.new(tail_pack),
-  RoadBike.new,
+  RoadBike.new(pannier),
   MountainBike.new(roll_pack),
   MountainBike.new(roll_pack)
 ]
