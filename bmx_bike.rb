@@ -3,6 +3,8 @@ require_relative 'abstract_bike'
 
 class BmxBike < AbstractBike
 
+  attr_reader :tail_pack
+
   def initialize
     @tail_pack = TailPack.new
     @weekly_rate = 70
@@ -12,10 +14,6 @@ class BmxBike < AbstractBike
 
   def adjust
     puts "Adjusting seat..."
-  end
-
-  def tail_pack
-    @tail_pack
   end
 
 end

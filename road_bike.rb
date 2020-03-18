@@ -2,7 +2,7 @@ require_relative 'pannier'
 require_relative 'abstract_bike'
 
 class RoadBike < AbstractBike
-  attr_writer :panniers
+  attr_reader :panniers
 
   def initialize
     @panniers = [Pannier.new, Pannier.new]
@@ -11,10 +11,6 @@ class RoadBike < AbstractBike
 
   def adjust
     puts "Lubricating gears..."
-  end
-
-  def panniers
-    @panniers
   end
 
 end
