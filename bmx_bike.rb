@@ -10,10 +10,6 @@ class BmxBike < AbstractBike
     @hourly_rate = 5
   end
 
-  def clean
-    puts "Cleaning..."
-  end
-
   def adjust
     puts "Adjusting seat..."
   end

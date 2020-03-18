@@ -1,4 +1,5 @@
 require_relative 'roll_pack'
+require_relative 'abstract_bike'
 
 class MountainBike < AbstractBike
 
@@ -7,10 +8,6 @@ class MountainBike < AbstractBike
     @weekly_rate = 90
     @daily_rate = 25
     @hourly_rate = 10
-  end
-
-  def clean
-    puts "Cleaning..."
   end
 
   def adjust
