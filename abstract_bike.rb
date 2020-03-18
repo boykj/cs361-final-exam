@@ -5,7 +5,7 @@ class AbstractBike
   end
 
   def clean
-    pust "Cleaning..."
+    puts "Cleaning..."
   end
 
   def prepare
